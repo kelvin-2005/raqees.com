@@ -22,14 +22,14 @@ a {
 header {
     background-color: #0077b6;
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
 header .logo h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -39,20 +39,26 @@ header .logo p {
 
 nav ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 1.5rem;
+    margin: 0.5rem 0;
 }
 
 nav ul li a {
     color: white;
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #005f86;
+    border-radius: 4px;
 }
 
 /* Intro Section Styles */
@@ -63,12 +69,12 @@ nav ul li a:hover {
 }
 
 .intro h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .intro p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -94,15 +100,14 @@ nav ul li a:hover {
 
 .products-section h2 {
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #0077b6;
 }
 
 .product-list {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product {
@@ -110,7 +115,9 @@ nav ul li a:hover {
     padding: 1rem;
     background-color: #e5e5e5;
     border-radius: 8px;
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
@@ -128,7 +135,7 @@ nav ul li a:hover {
 
 .product h3 {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #333;
 }
 
@@ -147,7 +154,7 @@ nav ul li a:hover {
 .order-section h2 {
     margin-bottom: 1.5rem;
     color: #0077b6;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 /* Form Styles */
@@ -166,7 +173,8 @@ form input, form select {
     margin-bottom: 1.2rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 250px;
+    width: 100%;
+    max-width: 300px;
     font-size: 1rem;
 }
 
@@ -192,4 +200,86 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    header .logo p {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+    }
+
+    .products-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 90%;
+        max-width: none;
+    }
+
+    .order-section h2 {
+        font-size: 1.5rem;
+    }
+
+    form input, form select {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1rem;
+    }
+
+    header .logo p {
+        font-size: 0.8rem;
+    }
+
+    .intro h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        font-size: 0.8rem;
+    }
+
+    .products-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .product h3 {
+        font-size: 1rem;
+    }
+
+    .product p {
+        font-size: 0.9rem;
+    }
+
+    .order-section h2 {
+        font-size: 1.2rem;
+    }
 }
