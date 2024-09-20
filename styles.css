@@ -194,6 +194,59 @@ footer {
     width: 100%;
 }
 
+/* Payment Section Styles */
+#payment {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#payment h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #0077b6;
+}
+
+#payment select, #payment button {
+    width: 200px;
+}
+
+#payment button {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+/* Thank You Section Styles */
+#thank-you {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+#thank-you h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0077b6;
+}
+
+#thank-you p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#thank-you a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#thank-you a:hover {
+    background-color: #005f86;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
@@ -273,54 +326,3 @@ footer {
         font-size: 1.5rem;
     }
 }
-
-/* Thank You Page Styles */
-#thank-you {
-    text-align: center;
-    padding: 3rem 1rem;
-    background-color: #fff;
-    margin-top: 2rem;
-    animation: fadeIn 2s ease-in-out; /* Fade-in animation for the whole section */
-}
-
-#thank-you h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #0077b6;
-    animation: fadeIn 2s ease-in-out;
-}
-
-#thank-you p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-    animation: fadeIn 3s ease-in-out;
-}
-
-#thank-you .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #0077b6;
-    color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    animation: fadeIn 4s ease-in-out;
-}
-
-#thank-you .btn:hover {
-    background-color: #005f86;
-}
-
-/* Keyframes for Fade-in Animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
